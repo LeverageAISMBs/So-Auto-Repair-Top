@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Oregon Auto Directory</title>
     <meta name="description" content="Find trusted and reliable auto repair shops in Southern Oregon. Browse our directory of vetted mechanics and service centers in Medford, Grants Pass, Ashland, and more.">
     <meta name="keywords" content="auto repair, southern oregon, mechanics, medford, grants pass, ashland, klamath falls, car service">
-    <title>Southern Oregon Auto Directory</title>
+    <link rel="canonical" href="https://soautodirectory.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soautodirectory.com/">
+    <meta property="og:title" content="Southern Oregon Auto Directory">
+    <meta property="og:description" content="Find trusted and reliable auto repair shops in Southern Oregon. Browse our directory of vetted mechanics and service centers.">
+    <meta property="og:image" content="https://soautodirectory.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://soautodirectory.com/">
+    <meta property="twitter:title" content="Southern Oregon Auto Directory">
+    <meta property="twitter:description" content="Find trusted and reliable auto repair shops in Southern Oregon. Browse our directory of vetted mechanics and service centers.">
+    <meta property="twitter:image" content="https://soautodirectory.com/og-image.jpg">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,13 +44,13 @@
         }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
-                transform: translateX(-50%) translateY(0);
+                transform: translateY(0);
             }
             40% {
-                transform: translateX(-50%) translateY(-20px);
+                transform: translateY(-20px);
             }
             60% {
-                transform: translateX(-50%) translateY(-10px);
+                transform: translateY(-10px);
             }
         }
     </style>
@@ -54,6 +69,23 @@
                 }
             }
         }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Southern Oregon Auto Directory",
+      "url": "https://soautodirectory.com/",
+      "description": "A modern, searchable directory of trusted auto shops in Southern Oregon. Find reliable mechanics and service centers from Medford to Klamath Falls with ease.",
+       "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://soautodirectory.com/#directory?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
     </script>
 <script type="importmap">
 {

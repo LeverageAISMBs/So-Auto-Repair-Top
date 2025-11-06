@@ -10,10 +10,11 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, onSelect }) => {
     return (
         <div
             onClick={() => onSelect(shop)}
-            className="bg-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2 cursor-pointer flex flex-col justify-between h-full"
+            className="group bg-white rounded-xl shadow-md p-6 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] cursor-pointer flex flex-col justify-between h-full"
             role="button"
             tabIndex={0}
             onKeyPress={(e) => e.key === 'Enter' && onSelect(shop)}
+            aria-label={`View details for ${shop.name}`}
         >
             <div>
                 <h3 className="text-xl font-bold text-primary-dark">{shop.name}</h3>
